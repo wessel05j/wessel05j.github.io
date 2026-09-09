@@ -131,7 +131,8 @@
   const chapterLinks = [...document.querySelectorAll('.chapter-links a')];
   const navLinks = [...document.querySelectorAll('[data-nav]')];
   const sections = navLinks.map(link => document.getElementById(link.dataset.nav));
-  const comfort = document.getElementById('beyondcomfort');
+  const viewsCard = document.querySelector('.views-card');
+  let viewsProgress = 1;
   let frame = 0;
   const clamp = value => Math.min(1, Math.max(0, value));
   function updateScroll() {
@@ -156,8 +157,12 @@
       if (index === sectionIndex) link.setAttribute('aria-current', 'location');
       else link.removeAttribute('aria-current');
     });
-    const rect = comfort.getBoundingClientRect();
-    comfort.style.setProperty('--chapter-progress', String(reduced ? 1 : clamp((height - rect.top) / (height + rect.height * .3))));
+    const rect = viewsCard.getBoundingClientRect();
+    const target = reduced ? 1 : clamp((height * .96 - rect.top) / Math.max(1, Math.min(rect.height * .85, height * .65)));
+    viewsProgress = reduced ? 1 : viewsProgress + (target - viewsProgress) * .15;
+    if (Math.abs(target - viewsProgress) < .001) viewsProgress = target;
+    viewsCard.style.setProperty('--views-progress', String(viewsProgress));
+    if (viewsProgress !== target) scheduleScroll();
   }
   function scheduleScroll() {
     if (!frame) frame = requestAnimationFrame(updateScroll);

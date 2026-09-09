@@ -25,7 +25,7 @@ The first visit uses dark mode. Theme and motion preferences are stored only on 
 
 ## Content maintenance
 
-Project descriptions are grounded in their READMEs and Johannes's September 2026 CV. BeyondComfort views and earnings are dated to September 2026. Satoshi Signal's live-test period and historical research are presented separately as reported figures, not a real-time performance feed. Its repository is private, so no public source link is shown.
+Project descriptions are grounded in their READMEs and Johannes's September 2026 CV. BeyondComfort’s 1.2M+ total views is dated to September 2026. The accompanying curve is an illustrative trend inspired by a supplied analytics screenshot, not a daily analytics dataset. Earnings are not displayed. Satoshi Signal’s live-test and historical research periods are presented separately, without financial returns. Its repository is private, so no public source link is shown.
 
 Update the internship year, availability, dated figures, and experience when they change. Keep the BeyondComfort channel link, GitHub repositories, and contact details current.
 
