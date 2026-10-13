@@ -214,7 +214,7 @@ h2{font-size:clamp(2.5rem,4.5vw,4.5rem);line-height:1.17;letter-spacing:-.055em;
 .skills-footnote{border-top:1px solid var(--line);padding-top:24px;margin:0;font-size:.875rem;color:var(--muted)}
 
 /* A warmer, quieter pace for the person behind the work. */
-.about-section{position:relative;overflow:hidden;padding-block:105px;background-color:var(--comfort-bg);background-image:linear-gradient(90deg,var(--about-overlay-start) 0%,var(--about-overlay-start) 29%,var(--about-overlay-mid) 61%,var(--about-overlay-end) 100%),linear-gradient(0deg,var(--about-overlay-start) 0%,transparent 58%,var(--about-overlay-mid) 100%),url("assets/about/personal-collage.webp");background-position:center,center,center;background-size:auto,auto,cover;background-repeat:no-repeat;border-block:1px solid var(--line);--accent:var(--comfort-accent)}
+.about-section{position:relative;overflow:hidden;padding-block:105px;background-color:var(--comfort-bg);background-image:linear-gradient(90deg,var(--about-overlay-start) 0%,var(--about-overlay-start) 29%,var(--about-overlay-mid) 61%,var(--about-overlay-end) 100%),linear-gradient(0deg,var(--about-overlay-start) 0%,transparent 58%,var(--about-overlay-mid) 100%),url("assets/about/personal-collage.webp");background-position:center,center,center;background-size:auto,auto,contain;background-repeat:no-repeat;border-block:1px solid var(--line);--accent:var(--comfort-accent)}
 .about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:110px}
 .about-section h2{font-size:clamp(2.5rem,4.2vw,4.4rem)}
 .about-copy{padding-top:47px}
