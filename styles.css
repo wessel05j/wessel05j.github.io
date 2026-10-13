@@ -297,7 +297,8 @@ h2{font-size:clamp(2.5rem,4.5vw,4.5rem);line-height:1.17;letter-spacing:-.055em;
   .more-heading{align-items:start}.more-heading .text-link{font-size:.8125rem;min-height:24px;white-space:nowrap;gap:8px}
   .small-projects{grid-template-columns:1fr}.more-work{padding-bottom:70px}.small-project h3{font-size:1.5rem}.local-ai-section{padding-block:62px;gap:28px}.local-ai-card{padding:24px}.local-ai-card-heading{align-items:start;flex-direction:column;margin-bottom:22px}
   .skills-panel{padding:27px}.timeline{padding-left:20px}.timeline-item{padding-left:7px}.timeline-item::before{left:-24px}
-  .about-section h2{font-size:2.5rem}.about-copy .about-lead{font-size:1.4rem}
+  .about-section{padding-block:64px;background-image:linear-gradient(180deg,#14110fa8 0%,#14110f57 48%,#14110f96 100%),url("assets/about/personal-collage-mobile.webp");background-position:center,center;background-size:100% 100%,100% 100%}
+  .about-grid{gap:26px}.about-section h2{font-size:2.35rem;line-height:1.08}.about-copy .about-lead{max-width:21ch;font-size:1.2rem;line-height:1.5}.personal-tags{margin:22px 0;gap:8px}.personal-tags span{padding-right:10px}.personal-tags span+span{padding-left:10px}
   .contact-section{grid-template-columns:1fr;gap:30px}.contact-section h2{font-size:3rem}.contact-section h2 a{gap:15px}
   .contact-links{flex-direction:row;flex-wrap:wrap;column-gap:25px;row-gap:0;padding:0}.contact-links .text-link{gap:8px;font-size:.875rem}
   .site-footer{flex-direction:column;align-items:start;gap:7px;padding-block:20px}.site-footer>div{justify-content:space-between;width:100%}
